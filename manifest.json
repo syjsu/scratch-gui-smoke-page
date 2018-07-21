@@ -1,0 +1,404 @@
+{
+    "@platforms": ["android", "iPhone", "iPad"],
+    "id": "H5EADD4F4",/*应用的标识，创建应用时自动生成，勿手动修改*/
+    "name": "Magic Scratch",/*应用名称，程序桌面图标名称*/
+    "version": {
+        "name": "3.0.2018.07.21",/*应用版本名称*/
+        "code": ""
+    },
+    "description": "魔法编程  Magic Scratch ",/*应用描述信息*/
+    "icons": {
+        "72": "icon.png"
+    },
+    "launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "developer": {
+        "name": "syjsu",/*开发者名称*/
+        "email": "syjsu@qq.com",/*开发者邮箱地址*/
+        "url": "www.xthinking.net"/*开发者个人主页地址*/
+    },
+    "permissions": {
+        
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        
+        "Events": {
+            "description": "应用扩展事件"
+        }
+    },
+    "plus": {
+        "splashscreen": {
+            "autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+            "waiting": true/*是否在程序启动界面显示等待雪花，true表示显示，false表示不显示。*/
+        },
+        "popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+        "runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+        "signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+        "distribute": {
+            "apple": {
+                "appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+                "mobileprovision": "",/*iOS应用打包配置文件*/
+                "password": "",/*iOS应用打包个人证书导入密码*/
+                "p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+                "devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+                "frameworks":[
+                ]/*调用Native.js调用原生Objective-c API需要引用的FrameWork，如需调用GameCenter，则添加"GameKit.framework"*/
+            },
+            "google": {
+                "packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+                "keystore": "",/*Android应用打包使用的密���库文件*/
+                "password": "",/*Android应用打包使用密钥库中证书的密码*/
+                "aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+               "permissions": ["<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>"]
+				/*使用Native.js调用原生安卓API需要使用到的系统权限*/
+            },
+            "orientation": ["landscape-primary","landscape-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+            "icons": {
+                "ios": {
+                    "prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+                     /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+                    "iphone": {
+                        "normal": "", /*iPhone3/3GS程序图标，分辨率：57x57*/
+                        "retina": "", /*iPhone4程序图标，分辨率：114x114*/
+                         /*iPhone4S/5/6程序图标，分辨率：120x120*/
+			 /*iPhone6 Plus程序图标，分辨率：180x180*/
+                        "spotlight-normal": "", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+                        "spotlight-retina": "", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+                         /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+                        "settings-normal": "", /*iPhone4设置页面程序图标，分辨率：29x29*/
+                         /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+			"app@2x":"unpackage/res/icons/120x120.png","app@3x":"unpackage/res/icons/180x180.png","settings@3x":"unpackage/res/icons/87x87.png","settings@2x":"unpackage/res/icons/58x58.png","spotlight@2x":"unpackage/res/icons/80x80.png","spotlight@3x":"unpackage/res/icons/120x120.png","notification@3x":"unpackage/res/icons/60x60.png","notification@2x":"unpackage/res/icons/40x40.png" /*iPhone6Plus设置页面程序图标，分辨率：87x87*/
+                    },
+                    "ipad": {
+                        "normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+                        "retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+                         /*iPad iOS7程序图标，分辨率：76x76*/
+                         /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+                        "spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+                        "spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+                        /*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+                        /*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+                        /*iPad设置页面程序图标，分辨率：29x29*/
+                        "app":"unpackage/res/icons/76x76.png","app@2x":"unpackage/res/icons/152x152.png","settings":"unpackage/res/icons/29x29.png","proapp@2x":"unpackage/res/icons/167x167.png","spotlight":"unpackage/res/icons/40x40.png","settings@2x":"unpackage/res/icons/58x58.png","spotlight@2x":"unpackage/res/icons/80x80.png","notification":"unpackage/res/icons/20x20.png","notification@2x":"unpackage/res/icons/40x40.png" /*iPad高分屏设置页面程序图标，分辨率：58x58*/
+                    },"appstore":"unpackage/res/icons/1024x1024.png"
+                },
+                "android": {
+                    "mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+                    "ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+                    "hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+                    "xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+                    "xxhdpi": "unpackage/res/icons/144x144.png","xxxhdpi":"unpackage/res/icons/192x192.png"/*1080P 高分屏程序图标，分辨率：144x144*/
+                }
+            },
+            "splashscreen": {
+                "ios": {
+                    "iphone": {
+                        "default": "", /*iPhone3启动图片选，分辨率：320x480*/
+                        "retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+                        "retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+                        "retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+                        "retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+                        "retina55l": ""/*5.5 英寸设备(iPhone6 Plus)横屏启动图片，分辨率：2208x1242*/
+                    },
+                    "ipad": {
+                        "portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+                        "portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+                        "landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+                        "landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+                        "portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+                        "portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+                        "landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+                        "landscape-retina7": ""/*iPad iOS7高分屏横屏启动图片，分辨率：2048x1536*/
+                    }
+                },
+                "android": {
+                    "mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+                    "ldpi": "", /*大屏启动图片，分辨率：320x442*/
+                    "hdpi": "", /*高分屏启动图片，分辨率：480x762*/
+                    "xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
+                    "xxhdpi": ""/*1080P高分屏启动图片，分辨率：1080x1882*/
+                }
+            }
+        }
+    },"fullscreen":true,
+	"dependencies":{
+		"pages": {
+			"index.html": {
+				"href": "index.html",
+				"resources": [
+					"static/favicon.ico",
+					"lib.min.js",
+					"gui.js"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"static/logo2.png",
+				"static/blocks-media/icons/wedo_when-tilt-forward.svg",
+				"static/assets/a4451ef35d29c4997f7c8e837da8af44.svg",
+				"static/assets/c26c369a2ca3f3a09b60e5af6c30bd15.gif",
+				"player.js",
+				"static/assets/fb3f9fa9be421f5153cd0223c3b0cb87.svg",
+				"static/assets/385aa4b73a425883b4f9e91501a52299.svg",
+				"static/assets/9ddae4f6c1aeaf0784007203d9d4ac9c.svg",
+				"static/assets/3a2d63269c47aa8244b0d613cf50eb6c.svg",
+				"static/assets/ac92bfcb2fc35687d1ba5ab6bb733671.svg",
+				"static/blocks-media/extensions/pen-block-icon.svg",
+				"static/assets/52d4a61d9fd788fe438f3037b9c49d3a.gif",
+				"static/assets/8fb27bc07c64def488d712e06906c7a4.svg",
+				"static/assets/cc0065f74161f7e7859b31796aaa3345.svg",
+				"static/assets/3aa6c6bac36d0bc86fbc48b99e86b7fa.svg",
+				"static/blocks-media/zoom-reset.svg",
+				"static/assets/e764d9d9a7a12892e0845b11cd4202df.png",
+				"static/blocks-media/icons/wedo_motor-speed_slow.svg",
+				"static/blocks-media/icons/event_broadcast_orange.svg",
+				"static/assets/a6cebfe99bad7b01f59b85998cbc4628.svg",
+				"static/assets/a7b8435328fd6d9605bc47218b0151ab.svg",
+				"static/blocks-media/click.wav",
+				"static/assets/a45329a2542b590a54dba0ccd30fdf4e.gif",
+				"static/assets/4e451c331fc3e836537a771ba3419adc.jpg",
+				"compatibilitytesting.js.map",
+				"static/assets/d84cdb7f4b9567882511ab47f63e342b.svg",
+				"static/assets/4b6100c9f591be6470cdfd4697de0b54.svg",
+				"static/assets/682da989d442750088077c7a699dec0a.gif",
+				"static/assets/c3421543ab6c9e154f4294257ce0d078.svg",
+				"blocks-only.html",
+				"static/assets/fd33cf9a4c8a05840c63e59fed32e1aa.png",
+				"static/assets/5f4208a6b7257c456c018d57efc8a7e9.svg",
+				"static/assets/1cb157de017b539c4f4e761d7847956e.gif",
+				"static/assets/2a70b21aaaed0619bdfcdec91db1ebe8.svg",
+				"static/blocks-media/click.mp3",
+				"static/assets/2e0c4790f8f9cf28e3c346b9cef0fcb6.svg",
+				"static/assets/9c49ade683c0f0d75796136ff5d1030f.svg",
+				"static/blocks-media/dropdown-arrow.svg",
+				"static/blocks-media/sprites.png",
+				"static/blocks-media/icons/event_broadcast_green.svg",
+				"static/assets/81d5d1258558641e78d425193753207c.svg",
+				"static/assets/42157e6edddc19588c3c2ff188703799.svg",
+				"static/blocks-media/icons/set-led_orange.svg",
+				"static/assets/bbbd98ae6a34eac772e34a57aaa5f977.svg",
+				"blocksonly.js",
+				"static/blocks-media/icons/control_stop.svg",
+				"static/assets/376daa5444cadd88038ef6ff16bfd653.gif",
+				"static/assets/0fd9fd69a38ab79358df5a77b29702c8.svg",
+				"static/assets/cbce5aef3c3b611073790b49bc49bc26.gif",
+				"static/assets/030b41f0e639ec6c245fd26c852cff70.jpg",
+				"static/assets/f2457825850317e66ef2128504613c30.svg",
+				"static/assets/374b815c6393f1c3585ddeec83c83f48.svg",
+				"static/blocks-media/comment-arrow-up.svg",
+				"static/blocks-media/eyedropper.svg",
+				"static/blocks-media/zoom-out.svg",
+				"static/assets/c4379c5eb21b7cf9b9c94055dde0b582.svg",
+				"static/assets/26255153f92ea41df149a58d3c3fe2cf.svg",
+				"static/blocks-media/handclosed.cur",
+				"static/blocks-media/delete-x.svg",
+				"static/assets/fe5afd6776eac0f7724b132a9ff5057d.svg",
+				"static/assets/8e5e28b23ba596614a60d319d9c64165.svg",
+				"static/assets/bc487cde787d1a887f7d5494e707ef46.svg",
+				"static/assets/b96acdcc724f0651325c9c54b8daeb23.gif",
+				"static/blocks-media/handdelete.cur",
+				"static/assets/422b48c2206d5240a6717c92496ba21a.svg",
+				"compatibilitytesting.js",
+				"static/assets/905aaa5ec7fca7cf364f5e74bcb10be1.png",
+				"static/assets/d16a2c96bd97f214cc889b5bc3f921b4.svg",
+				"static/assets/35c6867250ec4f430624bc9e2e7072d7.svg",
+				"static/logo.png",
+				"static/blocks-media/rotate-left.svg",
+				"static/assets/acc6c29b5eee67bc6b2aa85854d9bb3a.svg",
+				"static/assets/c9528ee4be1a12380a6c9caf73bd99e9.svg",
+				"extension-worker.js.map",
+				"static/blocks-media/icons/wedo_when-tilt-left.svg",
+				"static/assets/49977a0d3680d3a72955df57e5a15afb.svg",
+				"static/assets/8279ce395d0333b880b8be6d243fd111.svg",
+				"static/assets/09469790f10bcd5ed51fe8f85f8bdc1e.svg",
+				"static/assets/993a0700d8a0972d309307b0a4688ed7.svg",
+				"static/assets/84a9455c54ab68ad8dcf8b6f6465ae71.svg",
+				"static/assets/e113aa02e926ad23da7d46fead1231b9.gif",
+				"static/assets/917012df58a9a7fa5740ac527793fe74.png",
+				"static/blocks-media/1x1.gif",
+				"static/blocks-media/comment-arrow-down.svg",
+				"static/blocks-media/extensions/music-block-icon.svg",
+				"static/blocks-media/icons/set-led_blue.svg",
+				"static/assets/7ca82ca6ee18a4c008cae2b4fc8d5be2.gif",
+				"static/blocks-media/repeat.svg",
+				"static/assets/2f9cda00a530ac237fc24063067377c3.svg",
+				"static/blocks-media/icons/control_forever.svg",
+				"static/assets/7d6f0362fc2114f39b4f6651ebeda312.svg",
+				"static/blocks-media/icons/event_broadcast_magenta.svg",
+				"static/blocks-media/icons/event_when-broadcast-received_blue.svg",
+				"static/assets/75224f0798b20e31db0421d08a62d794.png",
+				"static/assets/8240bbaffb7601cf6a60c064b30c95ae.jpg",
+				"static/assets/de9ae687b647bf9a137a3f447bacbce1.svg",
+				"static/assets/7679e8aa3b5a6b745823e00a7b950065.png",
+				"static/assets/b586745b98e94d7574f7f7b48d831e20.wav",
+				"static/assets/b433ee02a13fa2a12f7f7059f1f6729a.svg",
+				"static/assets/59c79fa681b1421547664294a259b2d8.svg",
+				"static/assets/52797b48d511ecdd8e938684cee7638e.png",
+				"static/assets/7838388419a0268456642d4a08fcf5b9.gif",
+				"static/assets/eef0c5e9761d7850485979484434754c.gif",
+				"static/assets/89b23cdaf4cd793344e503007bd3b405.gif",
+				"static/assets/f0ac123e04059d4da1d80dc449f6c6af.png",
+				"static/blocks-media/status-ready.svg",
+				"static/assets/68d9ddbb2aa63310b88c7697e5b0c6c9.svg",
+				"static/assets/38a70367a21e2f1fb15aa59b7d367450.svg",
+				"static/blocks-media/handopen.cur",
+				"static/assets/51d228f5f5d5e42a252cc88210fd0cd2.svg",
+				"static/blocks-media/icons/event_when-broadcast-received_orange.svg",
+				"static/assets/c68c293bc65d68238f912074b1fd1386.gif",
+				"static/blocks-media/icons/wedo_when-tilt.svg",
+				"static/blocks-media/icons/event_broadcast_purple.svg",
+				"static/assets/eaeb48bb0997c81359942ee431680a8d.gif",
+				"static/assets/3cfc9b39a0d002246119d47f6756d77e.svg",
+				"static/assets/1319094a51748798730f01d1dc0972ac.svg",
+				"static/assets/1dfe5425b42628b6f1df1f39e97a319f.svg",
+				"static/assets/fc4228c3fe329628c4ba78569e5620eb.gif",
+				"static/blocks-media/icons/event_when-broadcast-received_coral.svg",
+				"static/assets/74e3c6dbadaaa2eb8b156e2d320b1208.jpg",
+				"static/assets/199f58b4a80fa56c5d8e032d6da5e9c2.svg",
+				"static/assets/1a4799b8789cb6a9b53c7f779c96ff24.jpg",
+				"static/assets/257e3788c5fbfe56c151a97e97dc20d8.svg",
+				"static/assets/e587d9d7e9a2f1f28041ba5c15db7a40.svg",
+				"static/blocks-media/delete.mp3",
+				"static/assets/21739a7b303ece303b023791813412cb.svg",
+				"static/assets/dd98971c2c185caf86144b6b5234d0fa.svg",
+				"static/assets/664d94e5cb8676c780c74c695f2e972c.svg",
+				"static/assets/48620c198b7ec2d6daf564badd34fa8d.jpg",
+				"static/assets/b2c44c738c9cbc1a99cd6edfd0c2b85b.svg",
+				"static/assets/3336a4516746eca7bc4a8e981e51a981.svg",
+				"static/assets/0e838120838e2bea2f8b5dec332a5a68.png",
+				"static/assets/1fd3942fa102af8c13222be2ccc52e36.svg",
+				"static/blocks-media/icons/arrow.svg",
+				"static/assets/680b3ff6a51d8fc77fbaf8695c8de929.svg",
+				"static/assets/ff262f7b3a4cbb95a0ba9c030dfdb30e.jpg",
+				"static/blocks-media/icons/event_broadcast_blue.svg",
+				"static/assets/daa425189a3f3db03ea72d211cd9a50d.jpg",
+				"static/blocks-media/icons/event_whenflagclicked.svg",
+				"static/assets/63e5827c1506216bd7c9927a4e5eb558.svg",
+				"compatibility-testing.html",
+				"static/assets/f011f09e649e804c4c0c8275a7d1ba5b.png",
+				"static/assets/ba5625a05f8ae4818d871287530dcfa9.gif",
+				"static/blocks-media/delete.ogg",
+				"static/assets/0294d390ec3c5a58f3701b3098646770.png",
+				"static/assets/1e9652bec24bcaacf5285be19746a750.svg",
+				"static/blocks-media/icons/wedo_when-tilt-backward.svg",
+				"static/assets/3eb63579853c3f4c5323a51dcf4104ac.svg",
+				"static/assets/e5cb3b2aa4e1a9b4c735c3415e507e66.png",
+				"static/assets/80ad76114d0b3f2fc54a3756dd283a53.svg",
+				"static/assets/a246880e69bc7a2a793c90a2fb013ae1.svg",
+				"static/assets/1824f8a20462980dad8a315af06ac9e5.gif",
+				"static/blocks-media/rotate-right.svg",
+				"static/assets/551aae506dfa65ce3b45713b5300a678.svg",
+				"static/blocks-media/sprites.svg",
+				"static/assets/abdb9221f6fe3367ae1d899e2352d2e3.svg",
+				"static/assets/9bda5ea0a9a8f88553cc641821f49be3.jpg",
+				"static/assets/94b06fb716871f81bec601724e29a457.svg",
+				"static/assets/1fa6345d57ffc67eccd9f44cf6a383dd.svg",
+				"static/blocks-media/icons/event_when-broadcast-received_purple.svg",
+				"static/assets/770c1f3eca5a0d7c327c275865dad3f0.svg",
+				"player.html",
+				"static/assets/a8f3ce9fb80d558020a867afe7a840cd.gif",
+				"static/blocks-media/icons/set-led_yellow.svg",
+				"static/blocks-media/icons/set-led_purple.svg",
+				"static/assets/989d99155bdb2720680a8c09fb7c454e.svg",
+				"static/assets/6608d56b3dce2738b2b137569d305d3b.png",
+				"static/assets/e53ff4a140871927b2d5be4f5cdb2c79.svg",
+				"static/blocks-media/icons/set-led_green.svg",
+				"static/blocks-media/icons/wedo_motor-counterclockwise.svg",
+				"static/assets/af2202211ca1873edb949012dab6f9d1.svg",
+				"static/assets/45353905cf166ce2cb04d16a217a8d4e.gif",
+				"static/assets/5679cd29c517886712116060d3360592.svg",
+				"static/assets/d2b41f6e34ede05f87b6ce9c3b3d74fc.jpg",
+				"static/blocks-media/icons/wedo_when-distance_close.svg",
+				"static/assets/e1aa217ece74e4dd29657f9f91a69f6e.svg",
+				"static/blocks-media/status-not-ready.svg",
+				"static/assets/cb666b99d3528f91b52f985dfb102afa.svg",
+				"static/assets/71655cde34ae75f48cb8820abf4b31e7.svg",
+				"static/assets/9c029845bbb161b90781ac839ac533f6.gif",
+				"static/assets/dccd5059320d172d1b282564e0d9422d.svg",
+				"static/assets/21988681fa28c8ce37982ca26463a6f5.svg",
+				"static/assets/663c93b7a3b945316908cd676bc6e34f.jpg",
+				"static/blocks-media/icons/set-led_white.svg",
+				"static/assets/36fcc7dbca20720abcab01e49d4955f9.svg",
+				"static/assets/ce5820b006d753e4133f46ae776f4d96.svg",
+				"static/assets/6de06131f1124722ba9dbd735ba1b62f.gif",
+				"static/assets/f3cd3bde88a384bf6757c9f30508cdd6.svg",
+				"static/assets/3547fa1f2678a483a19f46852f36b426.svg",
+				"extension-worker.js",
+				"static/assets/bd1b91f41e38b99827bed87b181ca174.png",
+				"static/assets/a80790c977586cc0595b5fe2f0bcb39a.svg",
+				"static/assets/9cfdd378e4cc977fe663ca932e530ec6.svg",
+				"static/blocks-media/icons/event_broadcast_coral.svg",
+				"static/assets/3e83d9d800459175308f0b45b117af16.png",
+				"player.js.map",
+				"static/assets/6be143c7cb9d23c787f7f20674a76f72.svg",
+				"static/blocks-media/click.ogg",
+				"static/extensions/example-extension.js",
+				"static/assets/31446edc97ac1eb0c3d2af65c0d8432a.svg",
+				"static/assets/33592a76d0d0fdaa4a32b2ea41db5e16.svg",
+				"static/blocks-media/icons/control_wait.svg",
+				"static/assets/e6f716edc49c30d8e46444093f2c113a.svg",
+				"static/assets/6e61fa7e48326bd2026d28e7a62884b1.svg",
+				"static/blocks-media/extensions/wedo2-block-icon.svg",
+				"static/assets/7c417cd2ff5d03f924e0ec8f380ad972.svg",
+				"static/assets/301439e2e5ab88b658368ee525e6752b.svg",
+				"static/assets/dd55f4c6c20f5d25e520b6f5bfb090c5.svg",
+				"static/blocks-media/icons/wedo_motor-speed_fast.svg",
+				"blocksonly.js.map",
+				"static/assets/dbff6359a3f338d5581c626ee50acf60.svg",
+				"static/assets/44e4859e354c81d66c73f741df2e5ec7.svg",
+				"static/assets/a03436c2c26c934fc0a7997065971874.png",
+				"static/blocks-media/icons/event_when-broadcast-received_magenta.svg",
+				"static/blocks-media/icons/set-led_coral.svg",
+				"static/assets/ebdda865bfeccf708d3eb26a6ae6a724.jpg",
+				"gui.js.map",
+				"static/blocks-media/dropdown-arrow-dark.svg",
+				"static/assets/25497089eb1925a13ab0ce12d6df6a72.gif",
+				"static/blocks-media/icons/wedo_when-tilt-right.svg",
+				"static/assets/c083eb7d85a76d2d205dcf97a46f76ac.svg",
+				"static/blocks-media/extensions/microbit-block-icon.svg",
+				"static/assets/db50bd7dacd69c9e8397eb83b4d83c3b.svg",
+				"static/assets/a54e98269f78b67e2036168fced9b070.svg",
+				"static/blocks-media/icons/event_when-broadcast-received_green.svg",
+				"static/assets/0017acb29de67f39330662586d07bcae.jpg",
+				"static/assets/f3eebf3dbf52d3ba97c9176807aa32ad.gif",
+				"static/assets/424371873bc8df88d6a305d8727157ab.svg",
+				"static/assets/dba629c24296756d68a135988fe96011.svg",
+				"static/blocks-media/icons/wedo_motor-speed_med.svg",
+				"static/assets/97926439955086f8ee4aabbd81580f17.png",
+				"static/assets/e2caa77932e7f773df1adfaa73a472a2.svg",
+				"static/assets/d889a872f3b0985b28fa872764172ef1.svg",
+				"static/assets/12e69a59db0f0c697eaaf1abbcad902f.svg",
+				"static/assets/10811a978de201353d564df7ba1ddb58.svg",
+				"static/blocks-media/green-flag.svg",
+				"static/blocks-media/zoom-in.svg",
+				"static/assets/59bec17a687a56c251f423378f05cb72.gif",
+				"static/assets/45345b5f49c8419e6409990f7b1874b0.jpg",
+				"static/assets/2258ea6dfe9ad15440ca55aca291698d.svg",
+				"static/blocks-media/icons/set-led_magenta.svg",
+				"static/assets/497f797eeffe5fa7e6a626abc0db08a1.svg",
+				"static/blocks-media/icons/wedo_motor-clockwise.svg",
+				"static/assets/3286e2838658ebdb82f62d062b14e951.svg",
+				"static/assets/4b6ca5259f1271d510f081867e746847.png",
+				"static/assets/04e10c82d2a75d397ca963c1a9f9e1e7.svg",
+				"static/assets/bb7c6671cf8cdffe1001dc509d20881c.svg",
+				"static/blocks-media/icons/set-led_mystery.svg",
+				"static/assets/e3cc49b6555f37b43d85e1beb5df7aa7.gif",
+				"static/assets/b592c8b4b02de3c7d367ce10efa9d7a6.svg",
+				"static/blocks-media/delete.wav",
+				"static/assets/11c6618c04716c35940f2a2c08c8558b.jpg",
+				"static/assets/f9dce53613d5f85b311ce9f84423c08b.svg",
+				"static/blocks-media/icons/control_repeat.svg",
+				"static/assets/8e768a5a5a01891b05c01c9ca15eb6aa.svg",
+				"static/assets/7eea42371f5ccb84b4fc7d0ba7331ea3.png",
+				"static/blocks-media/icons/remove.svg",
+				"static/assets/aaa4a3575852fe11d04f44c4a972ae73.svg",
+				"static/assets/02d927ce93445be737c7ff43fb98b135.svg"
+			]
+		}
+	}
+}

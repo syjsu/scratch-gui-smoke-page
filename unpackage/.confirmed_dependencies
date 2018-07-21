@@ -1,0 +1,12 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "static/favicon.ico",
+      "lib.min.js",
+      "gui.js"
+    ],
+    "refer": [],
+    "priority": 0
+  }
+}
